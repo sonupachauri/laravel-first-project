@@ -1,11 +1,10 @@
 @extends('layout.app')
-@section('content')
-        <!-- Page header with logo and tagline-->
+@section('content');
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Contact Page!</h1>
-                    <p class="lead mb-0">This is Contact Us text</p>
+                    <h1 class="fw-bolder"> Post {{$post->id}}</h1>
+                    <p class="lead mb-0">{{$post->title}}</p>
                 </div>
             </div>
         </header>
@@ -14,7 +13,7 @@
             <div class="row">
                 <!-- Blog entries-->
                 <div class="col-lg-12">
-                    <p> This is contact page..</p>
+                    <p>{{$post->post_text}}</p>
                 </div>
             </div>
         </div>
